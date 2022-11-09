@@ -1,0 +1,94 @@
+:root {
+    --variable-cyan: hsl(167, 36%, 54%);
+    --variable-dark-lue: hsl(205, 41%, 21%);
+    --variable-grayish-dark-blue: hsl(245, 10%, 22%);
+    --very-light-grey: hsl(0, 0%, 98%);
+    --ligh-grey: hsl(240, 2%, 92%);
+    --bright-red: hsl(0, 90%, 57%);
+}
+
+body {
+    background: var(--very-light-grey);
+}
+
+.navbar {
+    background-color: var(--very-light-grey);
+}
+
+.borderRemover,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: none
+}
+
+a {
+    color: black
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("/starter-code/images/icons/hamburger.svg");
+}
+
+.current,
+.current:hover {
+    color: var(--variable-cyan);
+}
+
+h1 {
+    font-weight: bold;
+    color: var(--variable-grayish-dark-blue);
+    font-family: 'Ibarra Real Nova', serif;
+}
+
+.btn {
+    background: var(--variable-grayish-dark-blue);
+    font-size: 15px;
+    border-radius: 0px;
+
+
+}
+
+.card {
+    border: none;
+
+    background-color: var(--very-light-grey);
+}
+
+.card-text {
+    line-height: 1.7;
+    font-family: 'Ibarra Real Nova', serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+footer {
+    background-color: var(--variable-grayish-dark-blue);
+
+}
+
+.navfoot {
+
+    background-color: var(--variable-grayish-dark-blue);
+}
+
+/* .navbarToggleExternalContent {
+    display: flex;
+    justify-content: end;
+
+}
+
+@media (max-width: 780px) {
+    .navbarToggleExternalContent {
+        display: flex;
+        justify-content: end;
+
+    }
+} */
