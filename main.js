@@ -22,6 +22,7 @@ function myFunction(x) {
 
 
 
+
     }
 }
 
@@ -31,3 +32,41 @@ x.addListener(myFunction) // Attach listener function on state changes
 
 
 
+// function adjustImgToScreen(y) {
+//     if (y.matches) {
+
+//         document.getElementById("homepage-profile-img").src = "/starter-code/images/homepage/mobile/image-homepage-profile.jpg";
+//         document.getElementById("portfolio-main-img").src = "/starter-code/images/homepage/mobile/image-homepage-profile.jpg";
+
+
+//     } else {
+//         document.getElementById("homepage-profile-img").src = "/starter-code/images/homepage/desktop/image-homepage-profile.jpg";
+//         document.getElementById("portfolio-main-img").src = "/starter-code/images/detail/desktop/image-fylo-hero.jpg";
+
+//     }
+// }
+
+// let y = window.matchMedia("(max-width: 768px)")
+// adjustImgToScreen(y)
+// y.addListener(adjustImgToScreen) // Attach listener function on state changes
+
+
+
+let mybutton = document.getElementById("myBtn");
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+let mybuttonDown = document.getElementById("myBtnDownAction");
+function downFunction() {
+    document.body.scrollTop = 15000;
+    document.documentElement.scrollTop = 10000;
+}
+
+let mybuttonAboutMe = document.getElementById("myBtnAboutMe");
+function moveToAboutMe() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}

@@ -24,9 +24,13 @@
     crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link
     href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
     rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style.css">
   <title>Frontend Mentor | Minimalist Portfolio</title>
 </head>
@@ -39,7 +43,9 @@
       <div class="d-flex justify-content-start ">
 
         <a href="#idk"><i class=" fa-solid fa-caret-up fa-3x "></i></a>
-        <a href="#idk"><i class=" fa-solid fa-caret-up fa-3x fa-rotate-180 "></i></a>
+        <a href="#idk"><i onclick="downFunction()" id="myBtnDownAction" title="Go to top"
+            class=" fa-solid fa-caret-down fa-3x  "></i></a>
+
       </div>
       <button class="navbar-toggler custom-toggler borderRemover" type="button" data-toggle="collapse"
         data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
@@ -49,7 +55,8 @@
       <div class="collapse navbar-collapse " id="navbarToggleExternalContent">
         <a class="nav-link  d-flex justify-content-end current" href="#">HOME </a>
         <a class="nav-link  d-flex justify-content-end" href="portfolio.html">PORTFOLIO</a>
-        <a class="nav-link  d-flex justify-content-end" href="#">CONTACT ME</a>
+        <a class="nav-link  d-flex justify-content-end"
+          href="https://www.linkedin.com/in/diego-santamar%C3%ADa-miguel-803243132/">CONTACT ME</a>
 
       </div>
     </nav>
@@ -63,9 +70,13 @@
       </div>
       <!-- d-flex justify-content-center -->
       <div class="query-flex-center col-sm-12  p-3 " id="reactive-center-p">
-        <h1>Hey, I’m Diego Santamaria and I love building beautiful websites.</h1>
+        <h1>Hola, soy Diego Santamaría y me encanta crear sitios web</h1>
       </div>
       <!-- d-flex justify-content-center -->
+
+
+
+
       <div class=" col-sm-12 p-3 " id="reactive-center-btn">
         <a href="#" class="btn btn-dark btn-lg " role="button" aria-pressed="true"><img
             src="/starter-code/images/icons/down-arrows.svg" alt="">&nbsp&nbsp&nbsp ABOUT ME</a>
@@ -76,32 +87,23 @@
     <div class="container justify-content-center align-items-center ">
       <div class="row gx-5  ">
         <div class="col-sm-12 col-lg-6  d-flex justify-content-center p-3">
-          <img src="/starter-code/images/homepage/desktop/image-homepage-profile.jpg" alt="">
+          <img src="/Img 2WhatsApp Image 2022-11-10 at 10.35.03 AM.jpeg" alt="" id="homepage-profile-img">
+
         </div>
         <div class="col-sm-12 col-lg-6  p-3  ">
           <div class="container border-top border-bottom border-grey">
             <div class="card ">
               <div class="card-body ">
-                <h5 class="card-title">About me</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.lit
-                  earum, provident perferendis corrupti repellendus illum reiciendis hic numquam, quis omnis modi
-                  ea!
-                  Alias
-                  rerum assumenda non autem omnis velit fuga natus? Expedita eos, rerum corrupti sint soluta neque
-                  dicta
-                  eaque
-                  consequuntur dolores, reiciendis voluptate delectus in excepturi esse quia illo aliquid dolore?
-                  Atque
-                  assumenda praesentium eius quibusdam rerum maiores voluptates totam nihil voluptatibus dolore
-                  excepturi
-                  non
-                  libero in quos quae molestiae dolorum, omnis, obcaecati natus odit corporis doloremque,
-                  repellendus
-                  libero in quos quae molestiae dolorum, omnis, obcaecati natus odit corporis doloremque,
-                  repellendus
-                  harum
+                <h5 class="card-title">Sobre mi</h5>
+                <p class="card-text">Soy una persona disciplinada, orientada a metas que disfruta trabajar arduamente
+                  hasta lograr lo que se propone. Creo fielmente que sistemas propiamente elaborados pueden acércanos a
+                  lograr nuestras metas y superarnos como individuos. Disfruto trabajar en equipo, pero también
+                  puedo desarrollarme individualmente. Poseo conocimiento intermedio de HTML, CSS, JavaScript, Swift y
+                  Excel.
+
+
                 </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="portfolio.html" class="btn btn-light">GO TO PORTFOLIO</a>
               </div>
             </div>
           </div>
@@ -117,29 +119,32 @@
 
   <nav class="navbar  navbar-expand-md navfoot ">
     <div class="container">
-      <div class="d-flex justify-content-start ">
-        <a href="#idk"><i class=" fa-solid fa-caret-up fa-3x "></i></a>
-        <a href="#idk"><i class=" fa-solid fa-caret-up fa-3x fa-rotate-180 "></i></a>
-        <a class="nav-link  d-flex justify-content-end current" href="#">HOME </a>
-        <a class="nav-link  d-flex justify-content-end " href="portfolio.html">PORTFOLIO</a>
-        <a class="nav-link  d-flex justify-content-end" href="#">CONTACT ME</a>
+      <div class="d-flex justify-content-start colorWhite">
+
+
+
+        <a href="#idk"><i onclick="topFunction()" id="myBtn" title="Go to top"
+            class=" fa-solid fa-caret-up fa-3x  colorWhite"></i></a>
+        <a href="#idk"><i class=" fa-solid fa-caret-up fa-3x fa-rotate-180 colorWhite"></i></a>
+        <a class="nav-link colorWhite d-flex justify-content-end " href="#">HOME </a>
+        <a class="nav-link colorWhite d-flex justify-content-end " href="portfolio.html">PORTFOLIO</a>
+        <a class="nav-link colorWhite d-flex justify-content-end"
+          href="https://www.linkedin.com/in/diego-santamar%C3%ADa-miguel-803243132/">CONTACT ME</a>
       </div>
 
       <div class="d-flex justify-content-end">
         <div class=" navbar-collapse ">
-          <a class="nav-link  d-flex justify-content-end text-white " href="#"><i class="fab fa-github"></i> </a>
+          <a class="nav-link  d-flex justify-content-end text-white "
+            href="https://github.com/DiegoSantamariaMiguel?tab=repositories"><i class="fab fa-github"></i> </a>
           <a class="nav-link  d-flex justify-content-end text-white " href="portfolio.html"> <i
               class="fab fa-twitter"></i> </a>
-          <a class="nav-link  d-flex justify-content-end text-white " href="#"><i class="fab fa-linkedin"></i></a>
+          <a class="nav-link  d-flex justify-content-end text-white "
+            href="https://www.linkedin.com/in/diego-santamar%C3%ADa-miguel-803243132/"><i
+              class="fab fa-linkedin"></i></a>
         </div>
       </div>
     </div>
   </nav>
-
-
-
-
-
 
 
 
